@@ -1,0 +1,6 @@
+{{ $title := .Get "title" }}
+{{ $lang := or (.Get "lang") "" }}
+<figure class="{{ if .Get "title" }}code-block in-title{{ else }}code-block{{ end }}">
+ {{ with $title }}<figcaption class="code-block-title">{{.}}</figcaption>{{ end }}
+ <div class="code-block-code">{{ highlight (trim .Inner "\r\n") $lang "" }}</div>
+</figure>

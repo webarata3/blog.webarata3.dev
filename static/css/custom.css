@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+@import "highlight-dracula.css";
+
+body {
+  font-family: 'Noto Sans Japanese';
+  @font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 100;
+  src: local('../font/NotoSansJP-Thin.otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 200;
+  src: local('../font/NotoSansJP-Regular.otf');
+}
+
+@font-face {
+   font-family: 'Noto Sans Japanese';
+   font-style: normal;
+   font-weight: 400;
+   src: local('../font/NotoSansJP-Regular.otf');
+ }
+
+@font-face {
+   font-family: 'Noto Sans Japanese';
+   font-style: normal;
+   font-weight: 500;
+   src: local('../font/NotoSansJP-Medium.otf');
+ }
+
+@font-face {
+   font-family: 'Noto Sans Japanese';
+   font-style: normal;
+   font-weight: 700;
+   src: local('../font/NotoSansJP-Bold.otf');
+ }
+
+@font-face {
+   font-family: 'Noto Sans Japanese';
+   font-style: normal;
+   font-weight: 900;
+   src: local('../font/NotoSansJP-Black.otf');
+ }
+}
+
+code {
+  font-family: Consolas, Monaco, monospace;
+  margin: 0;
+}
+
+pre {
+  padding-top: 0;
+}
+
+pre::before {
+  height: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+pre::after {
+  background: none;
+  box-shadow: none;
+}
+
+kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px monospace;
+  line-height: 10px;
+  color: #444d56;
+  vertical-align: middle;
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #d1d5da;
+}
+
+.code-block.in-title pre {
+  margin-top: 0;
+  border-radius: 0 4px 4px 4px;
+}
+
+.code-block-title {
+  font-size: 0.8em;
+  font-family: Consolas, Monaco, monospace;
+  display: inline-block;
+  font-size: smaller;
+  border-radius: 0.5em 0.5em 0 0;
+  padding: 0 0.5em;
+  background: #282a36;
+  color: #fff;
+}
+
+.code-block-code {
+  margin-top: -1px;
+}
+
+.code-block-code pre {
+  padding: 0.5em;
+  white-space: pre-wrap;
+}
+.code-block-code code {
+  color: #fff;
+}
+
